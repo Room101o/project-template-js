@@ -105,7 +105,13 @@
                     <div class="img-about2 ">
                         <img src="./public/imgs/about-2.jpg" alt="">
                         <div class="icon-play">
-                            <i class="fa-solid fa-circle-play" style="color: #CE1211; font-size: 40px; cursor: pointer;"></i>
+                            <i onclick="openPopup()" class="fa-solid fa-circle-play" style="color: #CE1211; font-size: 40px; cursor: pointer;"></i>
+                        </div>
+                    </div>
+                    <div class="popup-overlay "  id="popupOverlay">
+                        <div class="popup-content" style="z-index: 10000;">
+                          <button class="close-button" onclick="closePopup()">&times;</button>
+                          <iframe class="popup-video" src="https://www.youtube.com/embed/watch?v=kW140spadx8" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                     
@@ -658,6 +664,7 @@
             <h4 class="text-center">GALLERY</h4>
             <h1 class="text-center">CHECK <span style="color: #CE1211;">OUR GALLERY</span></h1>
         </div>
+        
 
 
     </section>
